@@ -23,7 +23,7 @@ async function tweet(access_token: string, text: string | undefined) {
 async function handler() {
   const access_token = await redis.get<string>('twitter_oauth_access_token')
   if (!access_token) return NextResponse.json({}, { status: 403 })
-  const tweets = await Promise.all(Array.from({ length: 5 }, () => queue.receiveMessage<TweetBody>()))
+  const tweets = await Promise.all(Array.from({ length: 4 }, () => queue.receiveMessage<TweetBody>()))
   await Promise.all(tweets.map((i) => tweet(access_token, i?.body?.tweet_text)))
   return NextResponse.json({}, { status: 200 })
 }
