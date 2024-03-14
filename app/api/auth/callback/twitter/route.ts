@@ -20,5 +20,5 @@ export async function GET(request: Request) {
   // Save the access_token in Upstash
   await redis.set('twitter_oauth_access_token', access_token)
   // Return back to homepage
-  return NextResponse.redirect('/', 303)
+  return NextResponse.redirect(new URL('/', request.url), 303)
 }
