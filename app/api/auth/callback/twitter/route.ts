@@ -19,6 +19,6 @@ export async function GET(request: Request) {
   } = await authClient.requestAccessToken(code)
   // Save the access_token in Upstash
   await redis.set('twitter_oauth_access_token', access_token)
-  // Return with a succesful response code
-  return NextResponse.json({}, { status: 200 })
+  // Return back to homepage
+  return NextResponse.redirect('/', 303)
 }

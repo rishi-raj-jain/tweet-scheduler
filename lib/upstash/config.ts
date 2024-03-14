@@ -8,6 +8,6 @@ export const redis = new Redis({
 
 export const queue = new Queue({
   redis,
-  queueName: 'tweets_',
+  queueName: 'tweets',
   concurrencyLimit: 5,
 })
