@@ -68,7 +68,7 @@ export default function ({ ok, tweet_date }: FormProps) {
         </PopoverContent>
       </Popover>
       {/* Text Area for Entering Text of Tweet */}
-      <Textarea id="tweet_text" name="tweet_text" className="min-h-[300px] w-[280px]" placeholder="Tweet in markdown format." />
+      <Textarea id="tweet_text" name="tweet_text" className="min-h-[300px] w-[280px]" placeholder="Tweet" />
       {/* Schedule Button Tweet */}
       <Button disabled={pending} className="w-[280px]">
         {pending ? 'Scheduling...' : <>Schedule &rarr;</>}
