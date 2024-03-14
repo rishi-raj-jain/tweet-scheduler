@@ -12,7 +12,7 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@upstash/qstash": "^2.3.1",
     "@upstash/queue": "^1.0.0",
-    "@upstash/redis": "^1.28.4",
+    "@upstash/redis": "^1.28.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.4.0",
