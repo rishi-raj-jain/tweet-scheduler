@@ -2,8 +2,8 @@
 
 'use server'
 
-import type { FormProps } from './form'
 import { queue } from '@/lib/upstash'
+import type { FormProps } from './form'
 
 export async function schedule(_: any, formData: FormData): Promise<FormProps> {
   try {
