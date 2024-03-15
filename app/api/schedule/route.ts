@@ -1,5 +1,7 @@
+// File: app/api/schedule/route.ts
+
 import { NextResponse } from 'next/server'
-import { queue, redis } from '@/lib/upstash/config'
+import { queue, redis } from '@/lib/upstash'
 import { verifySignatureAppRouter } from '@upstash/qstash/dist/nextjs'
 
 interface TweetBody {

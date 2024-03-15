@@ -1,6 +1,8 @@
+// File: app/api/auth/callback/twitter/route.ts
+
+import { redis } from '@/lib/upstash'
+import { authClient } from '@/lib/twitter'
 import { NextResponse } from 'next/server'
-import { redis } from '@/lib/upstash/config'
-import { authClient } from '@/lib/twitter/config'
 
 export async function GET(request: Request) {
   // Look for the callback URL to contain code

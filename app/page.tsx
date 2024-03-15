@@ -1,3 +1,5 @@
+// File: app/page.tsx
+
 'use client'
 
 // Form with Pending Status
@@ -7,8 +9,8 @@ import Form from './form'
 import { useFormState } from 'react-dom'
 
 // Scheduling Next.js Action
+import Twitter from '@/components/twitter'
 import { schedule } from './schedule.server'
-import Twitter from '@/components/ui/twitter'
 
 export default function () {
   const [state, formAction] = useFormState(schedule, {})

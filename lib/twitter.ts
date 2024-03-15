@@ -1,3 +1,5 @@
+// File: lib/twitter.ts
+
 import { auth } from 'twitter-api-sdk'
 
 export const authClient = new auth.OAuth2User({

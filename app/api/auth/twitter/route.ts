@@ -1,5 +1,7 @@
+// File: app/api/auth/twitter/route.ts
+
 import { NextResponse } from 'next/server'
-import { authClient } from '@/lib/twitter/config'
+import { authClient } from '@/lib/twitter'
 
 export async function GET() {
   // Obtain an authorization URL from Twitter

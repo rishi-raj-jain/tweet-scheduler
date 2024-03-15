@@ -1,7 +1,9 @@
+// File: app/schedule.server.tsx
+
 'use server'
 
 import type { FormProps } from './form'
-import { queue } from '@/lib/upstash/config'
+import { queue } from '@/lib/upstash'
 
 export async function schedule(_: any, formData: FormData): Promise<FormProps> {
   try {
