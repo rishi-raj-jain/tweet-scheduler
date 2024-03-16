@@ -1,4 +1,4 @@
-<!-- ![](https://upstash.com/blog/article-recommendation-system/opengraph-image) -->
+![](https://upstash.com/blog/tweet-scheduler/opengraph-image)
 
 # Scheduling Tweets using Upstash Queue and QStash
 
