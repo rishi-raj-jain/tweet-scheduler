@@ -16,7 +16,7 @@ export default function () {
       variant: 'secondary',
     },
     false: {
-      message: '1-Time Authentication with Twitter &rarr;',
+      message: 'Required: Twitter Authentication →',
       variant: 'destructive',
     },
   }
